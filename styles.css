@@ -1,0 +1,535 @@
+/* Menggunakan font Poppins */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e4e4e4;
+    color: #333;
+}
+
+ .aselole {
+  position: relative;
+  background: #d0d0d8;
+  padding: 50px 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.aselole h2 {
+  font-size: 1.5em;
+  color: #5150da;
+}
+
+.logo-container {
+  display: flex;
+  overflow: hidden;
+}
+
+.logoi {
+  display: flex;
+  flex-shrink: 0;
+  gap: 3em;
+  padding: 1em;
+  animation: infinite-scroll 10s linear infinite;
+}
+
+.logoi img {
+  height: 3rem;
+  filter: grayscale(1);
+}
+
+.logoi img:hover {
+  filter: grayscale(0);
+}
+@keyframes infinite-scroll {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/*navbar*/
+  .nav_logo {
+  color: #ade480;
+  font-family: 'Helvetica bold', sans-serif; /* Menggunakan font yang didefinisikan */
+    font-size: 1rem;
+}
+.nav_logo span {
+  font-family: "Helvetica Rounded Bold", sans-serif;
+  color: #edf6ee;
+}
+ .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+    padding: 20px;
+    background-color: rgba(51, 51, 51, 0.6); /* Semi-transparent background color */
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    border-radius: 5px;
+    transform: translateX(-50%); /* Center the navbar horizontally */
+    width: 98%; /* Adjust this value to fit your design */
+    max-width: 1200px; /* Maximum width of the navbar */
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* Apply blur effect to the background */
+   
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: relative;
+}
+
+.hamburger .fa-times {
+    display: none;
+    position: absolute;
+    right: 0;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f1c40f;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background for mobile menu */
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.5s ease-in-out;
+        z-index: 1000;
+        padding: 20px; /* Add padding to avoid content touching the edges */
+    }
+    .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 20px 0; /* Remove default margin */
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 0; /* Remove default padding */
+    border: none; /* Ensure no border is applied */
+    background-color: rgba(51, 51, 51, 0.6); /* Semi-transparent background color */
+}
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links.active {
+        max-height: 300px;
+    }
+
+    .hamburger.active .fa-bars {
+        display: none;
+    }
+
+    .hamburger.active .fa-times {
+        display: block;
+    }
+
+    .fa-times {
+        display: none;
+    }
+}
+
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #5150da, #3c3bb4);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.content {
+    display: flex;
+    flex-wrap: wrap; /* Biarkan kartu membungkus ke baris baru jika ruang tidak cukup */
+    justify-content: center; /* Pusatkan kartu */
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #ade480, #adea7c);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.content img {
+    width: 85%;
+    height: auto; 
+    padding: 45px;
+}
+
+
+
+.carden_01 {
+  border-radius: 8px;
+    background-color: #3c3bb4;
+    width: calc(50% - 20px);
+    padding: 12px;
+    margin: 10px; /* Margin untuk jarak antar kartu */
+    box-sizing: border-box; /* Sertakan padding dan border dalam ukuran total elemen */
+}
+
+
+.carden_01 h1 {
+    margin: 10px;
+    font-size: 1rem; /* Sesuaikan dengan ukuran yang lebih jelas */
+}
+
+.carden_01 i {
+  margin: 10px;
+  font-size: 4em;
+}
+.x11a {
+  display: inline-block;
+    position: relative;
+    overflow: hidden;
+  margin: auto 0px;
+  font-family: "Helvetica Bold", sans-serif;
+  font-size: 4em;
+}
+.hitung {
+     padding: 30% auto;
+    font-family: "Helvetica Bold", sans-serif;
+    font-size: 4em;
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.hitung {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.hero-image {
+    max-width: 120px;
+    border-radius: 50%;
+    padding: 80px 0;
+    margin-bottom: 20px;
+    animation: float 4s ease-in-out infinite;
+}
+
+
+p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.jmbtn {
+  display: flex;
+  align-items: center; 
+  text-align: left;
+  color: #ade480;
+  font-family: 'Helvetica bold', sans-serif; /* Menggunakan font yang didefinisikan */
+    font-size: 3rem;
+    margin: 20px 30px;
+}
+.jmbtn span {
+  font-family: "Helvetica Rounded Bold", sans-serif;
+  color: #edf6ee;
+}
+.jmbtn-2 {
+  text-align: left;
+  color: #fff;
+  font-family: 'Helvetica Oblique', sans-serif; /* Menggunakan font yang didefinisikan */
+    font-size: 10px;
+    margin: 20px 30px;
+}
+.carden {
+  width: 43px;
+border-radius: 8px;
+overflow: hidden;
+background-color: #ade480;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: -20px 30px;
+        }
+        
+.carden p {
+  font-family: 'Helvetica bold', sans-serif; /* Menggunakan font yang didefinisikan */
+  font-size: 10px;
+  color: #000;
+}
+
+
+/*backup
+.cta-button {
+    background-color: #FFC107;
+    color: #333;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #E0A800;
+    transform: translateY(-5px);
+}*/
+
+.cta-button {
+    background: linear-gradient(135deg, #5150da, #3c3bb4);
+    border: 2px solid #ade480;
+    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ade480; /* Warna teks */
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.cta-button::before {
+    content: '';
+    position: absolute;
+    bottom: -100%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #ade480; /* Warna ungu untuk animasi hover */
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+
+.cta-button:hover::before {
+    bottom: 0; /* Pindahkan warna ungu ke posisi penuh pada hover */
+}
+
+.cta-button:hover {
+    color: #3c3bb4; /* Warna teks saat hover */
+}
+
+.cta-button i {
+  margin: 0 5px;
+}
+
+.whyme {
+  position: relative;
+  overflow: hidden;
+  background: #5150da;
+  display: flex;
+  padding: 50px 20px;
+  display: flex;
+    flex-wrap: wrap; /* Biarkan kartu membungkus ke baris baru jika ruang tidak cukup */
+  align-items: center;
+  text-align: center;
+}
+.whyme .whyme-img {
+  
+  width: 100%;
+  padding 45%;
+}
+.whyme .whyme-img-2 {
+  
+  width: 70%;
+  margin: 10%;
+}
+.whyme h1 {
+  font-size: 20px;
+  font-family: "Helvetica bold", sans-serif;
+  color: #fff;
+}
+.whyme p {
+  color: #fff;
+}
+.whyme .text {
+  max-width: 500px;
+}
+.whyme .text-2 {
+  color: #ade480;
+  max-width: 500px;
+}
+
+@media (min-width: 768px) {
+  .whyme {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .whyme img {
+    width: 45%;
+    margin-bottom: 0;
+  }
+
+  .whyme .text {
+    max-width: 45%;
+  }
+}
+
+.whatis {
+  position: relative;
+  overflow: hidden;
+  background: url('./src/paper.jpg') no-repeat center center/cover;
+  padding: 80px 20px;
+}
+
+.whatis::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255,255,255, 0.5); 
+    z-index: 1;   
+}
+
+
+.whatis div.card {
+  position: relative;
+  display: inline-block;
+  margin: 0 20px;
+      z-index: 2;   
+}
+.whatis div.card h1 {
+  font-family: "Helvetica bold", sans-serif;
+  font-size: 30px;
+  color: #5150da
+}
+.whatis div.card p {
+  font-size: 15px;
+  color: #272768;
+}
+footer {
+    padding: 30px;
+    background-color: #481c7e;
+    color: #fff;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+footer p {
+  font-size: 15px;
+  color: #ade480;
+  margin: 10px 30px;
+}
+
+.come {
+  color: #ffd;
+}
+footer a {
+    display: inline-block; /* Memungkinkan penggunaan margin vertikal */
+    margin: 10px 30px;
+    color: #ade480;
+    text-decoration: none;
+}
+.line {
+            padding: 1px;
+            position: relative;
+            margin: 20px 30px; /* Jarak atas dan bawah garis */
+        }
+
+.line::before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 2px; /* Ketebalan garis */
+            background-color: #ade480; /* Warna garis */
+            position: absolute;
+            top: 50%; /* Posisi garis di tengah elemen */
+            left: 0;
+        }
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+/* Applying the animation to the <i> tag */
+.carden_01 i.spin-icon {
+    display: inline-block; /* Ensures the element respects width and height */
+    animation: spin 2s linear; /* Duration: 2s, type: linear, loop: 1 time */
+    animation-fill-mode: forwards; /* Keeps the element in the final rotated state */
+}
+
+
+/* Animasi Floating */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+
+@font-face {
+    font-family: 'Helvetica bold';  /* Nama font yang akan digunakan di CSS */
+    font-style: oblique;
+    font-weight: normal;
+    src: local('Helvetica bold'), url('NeueHelveticaBQBold.otf') format('opentype');
+}
+
+    @font-face {
+    font-family: 'Helvetica Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Helvetica Oblique'), url('Helvetica-Oblique.woff') format('woff');
+    }
+    
+        @font-face {
+    font-family: 'Helvetica Rounded Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Helvetica Rounded Bold'), url('helvetica-rounded-bold-5871d05ead8de.woff') format('woff');
+    }
